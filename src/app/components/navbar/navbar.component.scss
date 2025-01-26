@@ -1,0 +1,29 @@
+.navbar {
+  background-color: #151515;
+  margin-top: 25px;
+  margin-bottom: 140px;
+  border-radius: 50px;
+  box-shadow: 1px 1px 10px -5px #8f55c8;
+}
+
+.navbar-brand {
+  img {
+    width: 120px;
+    @media (max-width: 768px) {
+      width: 100px;
+    }
+  }
+}
+
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.273);
+  box-shadow: 1px 1px 8px -4px #ffffff;
+  &:focus {
+    box-shadow: 1px 1px 8px -1px #d74dd6;
+  }
+}
+
+.icon-bars {
+  color: white;
+  font-size: 24px;
+}

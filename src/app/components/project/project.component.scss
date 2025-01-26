@@ -1,0 +1,30 @@
+.project-sec {
+  margin-bottom: 100px;
+  @media (max-width: 768px) {
+    padding-inline: 8px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-xl-4 {
+    flex: 0 0 auto;
+    width: 30%;
+  }
+}
+
+.project-box {
+  background: linear-gradient(
+    to right,
+    #130428,
+    #251043,
+    #38126d,
+    #261045,
+    #190634
+  );
+  box-shadow: 2px 2px 10px -1px rgb(87 0 172);
+  border-radius: 10px;
+  transition: 0.4s;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}

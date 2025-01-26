@@ -1,0 +1,22 @@
+$main-color: #561893;
+
+.home-sec {
+  margin-bottom: 200px;
+}
+
+.image-container {
+  box-shadow: 0px -8px 70px -7px rgb(53, 13, 92);
+}
+
+.image-main {
+  transition: 0.4s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.icon-text {
+  position: absolute;
+  top: -40px;
+  left: 0;
+}

@@ -1,0 +1,42 @@
+.service-sec {
+  margin-bottom: 500px;
+  @media (max-width: 767px) {
+    margin-bottom: 200px;
+  }
+}
+
+.box-service {
+  max-width: 550px;
+  max-height: 220px;
+  background: linear-gradient(
+    to right,
+    #130428,
+    #251043,
+    #38126d,
+    #261045,
+    #190634
+  );
+  box-shadow: 4px 7px 24px #0000001f;
+  border-radius: 10px;
+  padding: 15px 25px;
+  transition: 0.4s;
+  &:hover {
+    transform: translateY(-10px);
+  }
+  h2 {
+    font-size: 23px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+.planet {
+  position: absolute;
+  right: 0;
+  top: 750px;
+  z-index: -1;
+  @media (max-width: 991px) {
+    top: 1400px;
+  }
+}

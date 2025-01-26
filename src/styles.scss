@@ -1,1 +1,113 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+$main-color: #561893;
+$main-color-light: #4c0e70;
+$bg-main: #0a0a0a;
+$bg-light: #151515;
+$white: #ffffff;
+$p-text: #bdbdbd;
+
+body {
+  font-family: "Poppins", serif;
+  background-color: $bg-main;
+  color: $white;
+}
+
+a {
+  color: $white !important;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $bg-light;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $main-color;
+}
+
+.up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  background-color: $main-color;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.active {
+  color: #c283ff !important;
+}
+
+.nav-link {
+  &:hover {
+    color: #c283ff !important;
+  }
+}
+
+.bg-light {
+  background-color: $bg-light;
+}
+
+.btn-main {
+  background-color: $main-color;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  color: $white;
+  transition: 0.4s;
+  min-width: 150px;
+  &:hover {
+    background-color: $main-color-light;
+  }
+}
+
+.p-text {
+  color: $p-text;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+.main-banner {
+  margin-bottom: 150px;
+  @media (max-width: 768px) {
+    margin-bottom: 100px;
+  }
+  .icon-text-main {
+    position: absolute;
+    right: -48px;
+    top: -40px;
+  }
+}
+
+.flash {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  filter: blur(40px);
+  background: radial-gradient(circle, #370c61, #420a63, #231242, #561893);
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 50%;
+}
