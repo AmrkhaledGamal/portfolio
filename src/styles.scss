@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import "ngx-toastr/toastr";
 
 $main-color: #561893;
 $main-color-light: #4c0e70;
@@ -110,4 +111,13 @@ img {
   z-index: -1;
   pointer-events: none;
   border-radius: 50%;
+}
+
+.ngx-toastr {
+  background-color: #561893 !important;
+  border-radius: 8px;
+  box-shadow: 4px 7px 24px #0000001f;
+  .toast-message {
+    text-align: center;
+  }
 }

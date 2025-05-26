@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-home',
@@ -7,12 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  loading = false;
+  constructor(private toastr: ToastrService) {}
 
   downloadCV() {
-    this.loading = true;
-    setTimeout(() => {
-      this.loading = false;
-    }, 500);
+    this.toastr.success('CV Downloaded');
   }
 }
