@@ -10,7 +10,21 @@ import { ToastrService } from 'ngx-toastr';
 export class HomeComponent {
   constructor(private toastr: ToastrService) {}
 
-  downloadCV() {
-    this.toastr.success('CV Downloaded');
+  downloadCV(event: Event) {
+    const link = event.target as HTMLAnchorElement;
+
+    // التحقق من وجود الملف
+    fetch(link.href)
+      .then((response) => {
+        if (response.ok) {
+          this.toastr.success('CV Downloaded Success');
+        } else {
+          this.toastr.error('File not found or error in downloading');
+        }
+      })
+      .catch((error) => {
+        this.toastr.error('Error downloading file');
+        console.error('Download error:', error);
+      });
   }
 }
